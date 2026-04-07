@@ -1,0 +1,44 @@
+
+1-VARIANT
+
+
+Projectni src qilib yarating 
+Har 1 start bosgan userni file ga saqlab borilsin
+
+Rasm tortadigan bot qilib bering
+
+Botga ixtiyoriy user kirib biroro objectni soz korinishuda yozsa 3 ta rasam qaytarsin Bot
+Rsmlarni Public Api Orqali topilsin va osha erdan totib olisin 
+Yani Codezda HTTP request qilishiz kerak Api rasmlarni olish uhun
+Tortilgan hamma rasmlar ham localga saqlanib ketsin 
+
+
+
+1.  Heap dagi LOH haqida gapirib bering nega kk, nima ozi u  =>
+Heap xotirasi uchga bolinadi SOP, LOH, POH,
+
+LOH xotirada faqat generic 2 boladi , U objectlar hajmi 100 mb oshsa  keyin LOH ga keb joylashadi,
+100 mb kichik hajmli onjectlar Soh ning, generic 0- 250 kb hajmi , generic 1 - 2 mb hajmi , generic 2 - 100 mb gacha bolgan 
+objectlarni saqlaydi  
+
+
+2.  Stream lar haqida gapirib bering =>  
+
+3. Extention Methodni tushuntirib bering =>
+
+
+Bu — static metod bo‘lib boshqa type (masalan string, int, List) ga go‘yoki o‘sha class ichidagi metoddek ishlaydi
+
+ Static class ichida bo‘ladi
+ Metod ham static bo‘ladi
+ Birinchi parametr oldida this yoziladi
+
+ Kodni toza qilish Qayta-qayta yoziladigan logikani bitta joyga yig‘ish
+
+ Framework class’larini kengaytirish (string, DateTime, List)
+
+Extention method faqat static class ichida bo‘ladi
+
+private methodlarni kengaytira olmaydi
+
+Method override qilinmaydi (faqat yangi metod qo‘shiladi)
