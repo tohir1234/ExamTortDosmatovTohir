@@ -2,32 +2,45 @@
 1-VARIANT
 
 
-Projectni src qilib yarating 
-Har 1 start bosgan userni file ga saqlab borilsin
-
-Rasm tortadigan bot qilib bering
-
-Botga ixtiyoriy user kirib biroro objectni soz korinishuda yozsa 3 ta rasam qaytarsin Bot
-Rsmlarni Public Api Orqali topilsin va osha erdan totib olisin 
-Yani Codezda HTTP request qilishiz kerak Api rasmlarni olish uhun
-Tortilgan hamma rasmlar ham localga saqlanib ketsin 
 
 
 
-1.  Heap dagi LOH haqida gapirib bering nega kk, nima ozi u  =>
-Heap xotirasi uchga bolinadi SOP, LOH, POH,
+1. SOH — Small Object Heap
+   LOH — Large Object Heap
+   85,000 byte (= 85 KB)
 
-LOH xotirada faqat generic 2 boladi , U objectlar hajmi 100 mb oshsa  keyin LOH ga keb joylashadi,
-100 mb kichik hajmli onjectlar Soh ning, generic 0- 250 kb hajmi , generic 1 - 2 mb hajmi , generic 2 - 100 mb gacha bolgan 
-objectlarni saqlaydi  
+Agar object > 85 KB bo‘lsa
+ LOH ga joylanadi.
+ 
+ katta rasm
+katta json fayl, katta array, video yoki file yuklash
+
+Bular LOH ga tushadi.
+.NET da Garbage Collector bor (GC).  Kichik obyektlar tez-tez tozalanadi.
+Lekin LOH:
+
+tez tozalanmaydi
+faqat katta tozalash paytida (Gen2) tozalanadi
+
+Sababi: katta obyektni ko‘chirish juda qimmat 
 
 
-2.  Stream lar haqida gapirib bering =>  
+2.  Stream = data oqimi (flow).
+Sizda 1 GB video bor.
+Agar uni birdan RAM ga yuklasangiz : Kompyuter sekinlashadi yoki xotira yetmaydi.
 
-3. Extention Methodni tushuntirib bering =>
+Stream nima qiladi
+Faylni bo‘lak-bo‘lak o‘qiydi.
 
+fayl birdaniga hammasi kelmaydi bolak - bolak bolib keladi
+Data ham shunday keladi.
+Fayl o‘qish/yozish
+Internetdan yuklash
+Rasm/video ishlash
+Network (API)
+Zip/arxiv
 
-Bu — static metod bo‘lib boshqa type (masalan string, int, List) ga go‘yoki o‘sha class ichidagi metoddek ishlaydi
+3.Bu — static metod bo‘lib boshqa type (masalan string, int, List) ga go‘yoki o‘sha class ichidagi metoddek ishlaydi
 
  Static class ichida bo‘ladi
  Metod ham static bo‘ladi
